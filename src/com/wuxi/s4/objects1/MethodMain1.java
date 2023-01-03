@@ -1,0 +1,31 @@
+package com.wuxi.s4.objects1;
+
+public class MethodMain1 {
+	public static void main(String[] args) {
+		System.out.println("Main Method 실행");
+		MethodTest	mt = new MethodTest();
+		MethodTEST3 mt3 = new MethodTEST3();
+		int salary = 3000000;
+		//호출시 매개변수로 보내는 값 : 인자값
+		mt3.t3(salary,0.95);
+		//메서드를 호출한다
+		//mt.t1();
+		Sword sword = new Sword();
+	
+		sword.name ="집행검";
+		sword.damage = 500;
+		
+		mt3.info(sword);
+		System.out.println(sword.name);
+		System.out.println(sword.damage);
+		sword.name="단도";
+		
+	
+		System.out.println("main:"+salary);
+		
+		
+		
+		System.out.println("Main Method 종료");
+	}
+
+}
